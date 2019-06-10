@@ -1,0 +1,103 @@
+body { /* Changes every body */
+	margin: 0;
+	min-height: 100%;
+	background: rgb(255,255,255);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+}
+h1 { /* h1 h2 li p all make sure that the text is not touching the page and gives it spacing */
+	margin-left: 20px;
+}
+
+h2 {
+	margin-left: 20px;
+	font-size: 24px;
+}
+li {
+	margin-left: 20px;
+}
+p{
+	margin-left:20px;
+	font-size: 19px;
+
+}
+.navigation { /* Helps with navigation menu */
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+header{ /* Sets the navigation menu to a lighter black */
+	background: rgb(12,12,12);
+}
+
+header::after { /* This helps with certain bugs */
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo { /* This lets the logo sit on the navigation menu and help center the text */
+	float: right;
+}
+
+nav {
+	float: left;
+}
+
+nav ul { /* nav ul helps with navigation bar positioning*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li { /* This helps with text positioning */
+	display: inline-block;
+	margin-left: 80px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+nav a { /* This is changing the text of the things on the navigation menu */
+	color: rgb(192,192,192);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav a:hover { /* This changes the colour of text if user hovers over any button */
+	color: rgb(255,255,255);
+	transition: 0.4s;
+}
+nav a::before { /* This allows the animation of the little block below every button */
+	content: '';
+	display:block;
+	height: 5px;
+	width: 0%;
+	background-color:white;
+	
+	position: absolute;
+	transition: all ease-in-out 250ms;
+	bottom: 0px;
+}
+nav a:hover:before { /* This also helps the block that appears */
+	width: 100%;
+}
+/* The last 3 rules all allow for minimizing the images and aligning the images with text */
+#width-image {
+	max-width: 100%;
+	object-fit: cover;
+}
+.img {
+	object-fit:cover;
+	padding-left: 20px;
+	width: 20%;
+	height: 20%;
+}
+.gif {
+	object-fit:cover;
+	padding-left: 20px;
+	width: 20%;
+	height: 20%;
+}
